@@ -1,0 +1,71 @@
+<div class="main-head">
+
+  <mat-toolbar fxLayout="row"
+               fxLayout.xs="column"
+               fxLayoutWrap
+               fxLayoutGap="16px"
+               fxLayoutAlign="center"
+
+  >
+  <div fxFlex="15%">
+    <!-- Logo -->
+    <img src="assets/images/home/logo.png" class="logo">
+
+  </div>
+
+  <div fxFlex="45%" style="padding-top: 1.4em;">
+    <!-- Danh sách thành phố -->
+    <mat-form-field appearance="outline" class="city">
+      <mat-label>Thành phố</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let city of cities" [value]="city.value">
+          {{city.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Danh sách món ăn  -->
+    <mat-form-field appearance="outline" class="city">
+      <mat-label>Món ăn</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+     <!-- Menu -->
+      <span class="menu">Đồ ăn</span>
+      <span class="menu">Đặt bàn</span>
+
+  </div>
+
+  <!-- Tìm kiếm và đăng nhập -->
+  <div fxFlex = "30%">
+    <!-- Thanh tìm kiếm -->
+    <mat-form-field appearance="legacy" class="search">
+      <mat-label>Tìm kiếm </mat-label>
+      <input matInput placeholder="Tên món.....">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <!-- Nút đăng nhập -->
+    <button mat-stroked-button style="font-size: 0.8em; color: rgb(61, 119, 228);">Đăng nhập</button>
+  </div>
+
+  <div fxFlex = "10%" class="social">
+    <img matRipple  src="assets/images/home/icons8-facebook.svg" class="socialitem">
+    <img matRipple  src="assets/images/home/icons8-instagram.svg" class="socialitem">
+    <img matRipple  src="assets/images/home/icons8-twitter.svg" class="socialitem">
+
+  </div>
+
+  </mat-toolbar>
+
+</div>
+
+<div class="main-body">
+  <app-food></app-food>
+</div>
+
+

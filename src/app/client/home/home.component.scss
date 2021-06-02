@@ -1,0 +1,55 @@
+.main-head{
+  height: 80px;
+  background-color: #F5F5F5;
+}
+
+.logo{
+  height: 100%;
+  margin: 4% 0 0 30% ;
+  cursor: pointer;
+}
+
+
+.city{
+  ::ng-deep.mat-form-field-outline {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  width: 20%;
+  margin-right: 1em;
+  margin-top: -3em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.menu {
+  margin-left: 2%;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 300;
+}
+span:hover{
+  color: #F50057;
+}
+
+.search{
+
+  width:60%;
+  margin-right: 2rem;
+}
+
+.social{
+  padding-top: 1em;
+}
+
+.socialitem{
+  width: 20%;
+  margin: 0 0.5em 0 0.5em;
+  cursor: pointer;
+}
+
+
+.main-body{
+  height: calc(100vh - 80px );
+  width: 100%;
+}
