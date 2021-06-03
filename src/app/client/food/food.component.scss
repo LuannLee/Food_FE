@@ -17,8 +17,23 @@
 }
 
 .left-layout{
-  background-color: rgb(238, 197, 197);
+  // background-color: rgb(238, 197, 197);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.food{
+  border: 1px solid white;
+  margin: 0 0.2em 0 0.2em;
+  color: white;
+  transition: 0.7s;
+}
+
+.food:hover {
+  background-color: white;
+  color: black;
+  font-weight: 500;
 }
 

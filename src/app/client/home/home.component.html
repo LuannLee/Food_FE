@@ -1,71 +1,105 @@
-<div class="main-head">
+<mat-toolbar
+  fxLayout="row"
+  fxLayout.xs="row"
+  fxLayoutWrap
+  fxLayoutGap="1rem"
+  fxLayoutAlign="center"
+>
+  <div fxFlex="10%">
+    <!-- Logo khi màn hình to -->
+    <img fxHide.lt-lg src="assets/images/home/logo.png" class="logo"/>
 
-  <mat-toolbar fxLayout="row"
-               fxLayout.xs="column"
-               fxLayoutWrap
-               fxLayoutGap="16px"
-               fxLayoutAlign="center"
-
-  >
-  <div fxFlex="15%">
-    <!-- Logo -->
-    <img src="assets/images/home/logo.png" class="logo">
-
+    <!-- Logo khi màn hình bé -->
+    <button fxHide.gt-xs mat-icon-button fxLayoutAlign="center">
+      <!-- <mat-icon style="transform: translateY(45%) translateX(-30%) ;">restaurant_menu</mat-icon> -->
+      <img  src="assets/images/home/icons8-kawaii-noodle-64.png">
+    </button>
   </div>
 
-  <div fxFlex="45%" style="padding-top: 1.4em;">
+  <div fxFlex="60%" fxLayoutGap="1rem">
     <!-- Danh sách thành phố -->
-    <mat-form-field appearance="outline" class="city">
+    <mat-form-field fxHide.lt-lg appearance="outline" class="select-item">
       <mat-label>Thành phố</mat-label>
       <mat-select>
         <mat-option *ngFor="let city of cities" [value]="city.value">
-          {{city.viewValue}}
+          {{ city.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxHide.gt-xs appearance="outline" class="select-mini-item">
+      <mat-label>Thành phố</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let city of cities" [value]="city.value">
+          {{ city.viewValue }}
         </mat-option>
       </mat-select>
     </mat-form-field>
 
     <!-- Danh sách món ăn  -->
-    <mat-form-field appearance="outline" class="city">
+    <mat-form-field fxHide.lt-lg appearance="outline" class="select-item">
       <mat-label>Món ăn</mat-label>
       <mat-select>
         <mat-option *ngFor="let food of foods" [value]="food.value">
-          {{food.viewValue}}
+          {{ food.viewValue }}
         </mat-option>
       </mat-select>
     </mat-form-field>
 
-     <!-- Menu -->
-      <span class="menu">Đồ ăn</span>
-      <span class="menu">Đặt bàn</span>
-
+    <!-- Menu -->
+    <span fxHide.lt-lg class="menu">Đồ ăn</span>
+    <span fxHide.lt-lg class="menu">Đặt bàn</span>
   </div>
 
   <!-- Tìm kiếm và đăng nhập -->
-  <div fxFlex = "30%">
-    <!-- Thanh tìm kiếm -->
-    <mat-form-field appearance="legacy" class="search">
-      <mat-label>Tìm kiếm </mat-label>
-      <input matInput placeholder="Tên món.....">
-      <mat-icon matSuffix>search</mat-icon>
-    </mat-form-field>
+  <div fxFlex="20%" fxLayoutGap="1rem" fxLayoutAlign=" center">
 
-    <!-- Nút đăng nhập -->
-    <button mat-stroked-button style="font-size: 0.8em; color: rgb(61, 119, 228);">Đăng nhập</button>
+    <button mat-icon-button fxHide.lt-lg>
+      <mat-icon class="search">search</mat-icon>
+    </button>
+
+    <!-- Nút đăng nhập lớn-->
+    <button
+      fxHide.lt-lg
+      mat-stroked-button
+      class="btn-login"
+    >
+      Đăng nhập
+    </button>
+
+    <!-- Nút đăng nhập nhỏ-->
+    <button
+      fxHide.gt-xs
+      mat-stroked-button
+      class="btn-login-mini"
+    >
+      Đăng nhập
+    </button>
+
+
+
   </div>
 
-  <div fxFlex = "10%" class="social">
-    <img matRipple  src="assets/images/home/icons8-facebook.svg" class="socialitem">
-    <img matRipple  src="assets/images/home/icons8-instagram.svg" class="socialitem">
-    <img matRipple  src="assets/images/home/icons8-twitter.svg" class="socialitem">
+  <div fxFlex="10%" fxLayoutAlign="space-evenly center" fxHide.lt-lg class="social">
+    <img
+      matRipple
+      src="assets/images/home/icons8-facebook.svg"
+      class="socialitem"
+    />
+    <img
+      matRipple
+      src="assets/images/home/icons8-instagram.svg"
+      class="socialitem"
+    />
+    <img
+      matRipple
+      src="assets/images/home/icons8-twitter.svg"
+      class="socialitem"
+    />
 
   </div>
-
-  </mat-toolbar>
-
-</div>
+</mat-toolbar>
 
 <div class="main-body">
   <app-food></app-food>
 </div>
-
-
