@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {

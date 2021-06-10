@@ -6,6 +6,7 @@
   fxLayoutGap
   fxLayoutAlign="center"
 >
+  <!-- Trắng lề  -->
   <div fxFlex="20%" fxHide.lt-lg ></div>
 
   <!-- Main Layout -->
@@ -21,19 +22,13 @@
     <div fxFlex="40%" class="left-layout" >
 
       <!-- Tìm kiếm Món ăn màn hình lớn-->
-      <mat-form-field appearance="outline" class="search" fxHide.lt-lg>
+      <mat-form-field appearance="outline" class="search">
         <input matInput placeholder="Tìm địa điểm, món ăn, địa chỉ,...">
         <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>
 
-      <!-- Tìm kiếm Món ăn màn hình nhỏ -->
-      <mat-form-field appearance="outline" class="mini-search" fxHide.gt-xs>
-        <input matInput placeholder="Tìm địa điểm, món ăn, địa chỉ,...">
-        <mat-icon matSuffix>search</mat-icon>
-      </mat-form-field>
-
-      <!-- Danh sách  các loại món ăn màn hình lớn-->
-      <div class="list-category" fxHide.lt-lg>
+      <!-- Danh sách  các loại món ăn màn hình-->
+      <div class="list-category" >
         <button mat-stroked-button class="category">Tất cả</button>
         <button mat-stroked-button class="category">Đồ uống</button>
         <button mat-stroked-button class="category">Đồ ăn nhanh</button>
@@ -44,21 +39,6 @@
         <button mat-stroked-button class="category">Đồ ăn nhanh</button>
         <button mat-stroked-button class="category">Kem</button>
       </div>
-
-      <!-- Danh sách  các loại món ăn màn hình nhỏ-->
-      <div class="list-category" fxHide.gt-xs>
-        <button mat-stroked-button class="mini-category">Tất cả</button>
-        <button mat-stroked-button class="mini-category">Đồ uống</button>
-        <button mat-stroked-button class="mini-category">Đồ ăn nhanh</button>
-        <button mat-stroked-button class="mini-category">Kem</button>
-
-        <button mat-stroked-button class="mini-category">Tất cả</button>
-        <button mat-stroked-button class="mini-category">Đồ uống</button>
-        <button mat-stroked-button class="mini-category">Đồ ăn nhanh</button>
-        <button mat-stroked-button class="mini-category">Kem</button>
-      </div>
-
-
 
     </div>
 
@@ -108,20 +88,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -135,20 +114,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -162,20 +140,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -189,20 +166,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -216,20 +192,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -243,20 +218,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -270,20 +244,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -297,20 +270,19 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
@@ -324,26 +296,24 @@
                      fxLayoutWrap
                      fxLayoutGap
                      fxLayoutAlign="space-between center"
-                     style="width:100%; height: 100%;"
+                     style="width:100%; height: 100%;cursor: pointer;"
                 >
 
-                 <div fxFlex=60>
+                 <div fxFlex=60 >
                     <img src="assets/images/food/food.jpeg" class = "food-img">
                  </div>
 
-                 <div fxFlex=20>
-                    <h3 fxHide.lt-lg class="food-title" style="font-size: 1.3rem;">Bánh mì dân tổ</h3>
-                    <h5 fxHide.gt-xs class="food-title">Bánh mì dân tổ</h5>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <h3 class="food-title">Bánh mì dân tổ - Hoàng Minh Thảo</h3>
                  </div>
 
-                 <div fxFlex=20>
-                    <p fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
+                 <div fxFlex=20 style="width: 100%; padding: 0 .5rem;">
+                    <p class="food-addr" fxHide.lt-lg style="text-align: center;">136 Hoàng Minh Thảo, Quận Lê Chân, Hải Phòng</p>
                  </div>
 
                 </div>
 
               </mat-grid-tile>
-
 
             </mat-grid-list>
 

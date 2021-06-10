@@ -12,16 +12,7 @@
     margin-top: 2%;
   }
   width: 90%;
-  font-size: 1.2em;
-}
-
-.mini-search {
-  ::ng-deep.mat-form-field-outline {
-    background-color: rgb(255, 255, 255) !important;
-    border-radius: 5px;
-    margin-top: 2%;
-  }
-  width: 90%;
+  font-size: 1.2rem;
 }
 
 .left-layout{
@@ -43,15 +34,7 @@
   transition: 0.7s;
 }
 
-.mini-category {
-  border: 1px solid white;
-  margin: 0.2rem 0.3em;
-  color: white;
-  transition: 0.7s;
-}
-
-.category:hover ,
-.mini-category:hover{
+.category:hover{
   background-color: white;
   color: black;
   font-weight: 500;
@@ -78,7 +61,50 @@
 }
 
 .food-title{
-  text-align: center;
+  font-size: 1.4rem;
   font-weight: 500;
-  transform: translateY(50%);
+  transform: translateY(40%);
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.food-addr{
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+// Element kích thước Laptop ======================================================================================================
+@media only screen and (max-width: 1366px){
+  .search {
+    font-size: 1rem;
+  }
+
+  .category {
+    margin: 0.2rem 0.3em;
+  }
+
+  .food-title{
+    font-size: 1.1rem;
+    transform: translateY(10%);
+  }
+}
+
+
+// Element kích thước Iphone ======================================================================================================
+@media only screen and (max-width: 375px){
+
+  .search {
+    font-size: .9rem;
+  }
+
+  .category {
+    margin: 0.2rem 0.3em;
+  }
+
+  .food-title{
+    font-size: .8rem;
+  }
+
+
 }
