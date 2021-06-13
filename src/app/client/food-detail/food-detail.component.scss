@@ -1,0 +1,89 @@
+.main-layout{
+  width: 100%;
+  height: 100%;
+}
+
+.food-detail{
+  padding: 1rem 0;
+}
+
+.food-img{
+  width: 100%;
+  height: 100%;
+}
+
+.menu-title{
+  transform: translateY(40%);
+  font-weight: 500;
+  color:#CF2127;
+}
+
+.list-menu{
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.menu-item{
+  cursor: pointer;
+}
+
+.food-item{
+  width: 100%;
+  height: 15%;
+  padding: 0.5rem 1rem;
+}
+
+.food-title{
+  font-weight: 500;
+  font-size: 1.3rem;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.btn-order{
+  width:80%;
+  font-size: 1.2rem;
+  background-color: #cf2127;
+  color: white;
+}
+
+.outline{
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem 0 ;
+}
+
+.total{
+  font-weight: 600;
+  color:#0288D1;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+// Element kích thước Laptop ======================================================================================================
+@media only screen and (max-width: 1366px){
+  .food-title{
+    font-size: 1rem;
+  }
+  .food-price{
+    font-size: .8rem;
+  }
+  .total{
+    font-size: 1rem;
+  }
+}
+
+
+// Element kích thước Iphone ======================================================================================================
+@media only screen and (max-width: 375px){
+  .food-detail{
+    padding: 1rem;
+  }
+
+}

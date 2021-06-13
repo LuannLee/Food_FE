@@ -45,10 +45,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 
+
 // Import Component
 import { HomeComponent } from './client/home/home.component';
 import { LoginComponent } from './client/login/login.component';
 import { FoodComponent } from './client/food/food.component';
+import { FoodDetailComponent } from './client/food-detail/food-detail.component';
 
 
 @NgModule({
@@ -56,7 +58,8 @@ import { FoodComponent } from './client/food/food.component';
     AppComponent,
       HomeComponent,
       LoginComponent,
-      FoodComponent
+      FoodComponent,
+      FoodDetailComponent,
   ],
   imports: [
     BrowserModule,
