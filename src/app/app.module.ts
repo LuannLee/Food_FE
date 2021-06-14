@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Import Flex Layout
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { registerLocaleData } from '@angular/common';
+import localeEnVI from '@angular/common/locales/vi';
+
+registerLocaleData(localeEnVI);
 // Import API
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -105,8 +109,14 @@ import { FoodDetailComponent } from './client/food-detail/food-detail.component'
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+
+
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID, useValue: 'vi'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

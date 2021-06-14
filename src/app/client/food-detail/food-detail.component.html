@@ -6,7 +6,7 @@
 >
 
   <!-- Hiển thị thông tin đồ ăn -->
-  <div fxFlex = 40
+  <div fxFlex = 45
        fxFlex.xs
        fxLayout="row"
        fxLayout.xs="column"
@@ -15,11 +15,9 @@
        fxLayoutAlign="center"
        class="food-detail"
   >
-    <!-- Khoảng trắng lề -->
-    <div fxFlex=15  fxHide.lt-lg></div>
 
     <!-- Hình ảnh sản phẩm -->
-    <div fxFlex>
+    <div fxFlex=30>
       <img src="assets/images/food/food2.jpeg" class="food-img">
     </div>
 
@@ -36,13 +34,10 @@
       <h3>Giá tiền:  30.000 vnd</h3>
     </div>
 
-    <!-- Khoảng trắng lề -->
-    <div fxFlex=15 fxHide.lt-lg></div>
-
   </div>
 
   <!-- Ưu đãi nhập mã giảm giá -->
-  <div fxFlex = 60
+  <div fxFlex = 55
        fxFlex.xs = 30
        fxLayout="row"
        fxLayoutWrap
@@ -50,13 +45,11 @@
        fxLayoutAlign="center"
        style="background-color: #F2F2F2;"
   >
-     <!-- Khoảng trắng lề -->
-     <div fxFlex=15 fxHide.lt-lg></div>
 
      <!-- Thực đơn và đặt hàng -->
 
      <!-- Màn hình lớn -->
-     <div fxFlex
+     <div fxFlex= 70
           fxLayout="column"
           fxLayoutWrap
           fxLayoutGap = 16px
@@ -86,7 +79,60 @@
         </div>
 
         <!-- Mã Giảm Giá -->
-        <div fxFlex= 50 style="background-color: sandybrown;height: 1000px;"></div>
+        <div fxFlex= 50
+             fxLayout="column"
+             fxLayoutGap = 16px
+             fxLayoutAlign="space-evenly center"
+             style="background-color: white; border-radius: 10px; padding: 1rem;"
+        >
+
+            <!-- Mã giảm giá -->
+            <mat-list class="sale">
+
+              <mat-list-item >
+                <mat-icon mat-list-icon class="sale-icon">directions_bike</mat-icon>
+                <div mat-line>Nhập "FSOTH": Giảm 10k trên phí vận chuyển</div>
+              </mat-list-item>
+
+              <mat-list-item >
+                <mat-icon mat-list-icon class="sale-icon">directions_bike</mat-icon>
+                <div mat-line>Nhập "FSOTH": Giảm 10k trên phí vận chuyển</div>
+              </mat-list-item>
+
+              <mat-list-item >
+                <mat-icon mat-list-icon class="sale-icon">directions_bike</mat-icon>
+                <div mat-line>Nhập "FSOTH": Giảm 10k trên phí vận chuyển</div>
+              </mat-list-item>
+
+              <mat-list-item >
+                <mat-icon mat-list-icon class="sale-icon">directions_bike</mat-icon>
+                <div mat-line>Nhập "FSOTH": Giảm 10k trên phí vận chuyển</div>
+              </mat-list-item>
+
+
+            </mat-list>
+
+            <!-- Tìm kiếm và món ăn thêm -->
+
+              <!-- Search -->
+            <mat-form-field appearance="outline" class="search">
+              <input matInput placeholder="Tìm địa điểm, món ăn, địa chỉ,...">
+              <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+
+              <!-- Món ăn -->
+            <div fxLayout="row" fxLayoutAlign="start center" style="width: 100%;background-color: chartreuse  ;">
+              <div fxFlex=15>
+                <img src="assets/images/food/food3.jpeg" style="width: 100%; height: 100%;">
+              </div>
+              <div fxFlex=50 fxLayout="column" fxLayoutAlign="center center" style="background-color: blue;">
+                <div ></div>
+              </div>
+              <div fxFlex=20 style="background-color: burlywood;">adasd</div>
+            </div>
+
+
+        </div>
 
         <!-- Đặt hàng -->
         <div fxFlex= 30>
@@ -110,79 +156,19 @@
             </div>
 
             <!-- Giá tiền -->
-            <div fxFlex=40 fxLayoutAlign="end end" class="food-price">74.000đ</div>
-            </div>
-
-            <div fxLayout="column" class="food-item">
-
-            <!-- Số lượng và tên sản phẩm -->
-            <div fxFlex=60 fxLayout="row" fxLayoutAlign="start center">
-
-              <!-- Giá tiền -->
-              <div fxFlex=30 fxLayout="row" fxLayoutAlign="start center">
-                <mat-icon style="color:#329900; font-size: 20px; cursor: pointer;">add_circle</mat-icon>
-                <span style="font-weight: 500; margin-right: .3rem;">74</span>
-                <mat-icon style="font-size: 20px; cursor: pointer;">remove_circle</mat-icon>
-              </div>
-
-              <!-- Tên sản phẩm -->
-              <div fxFlex=70 class="food-title">Combo Mì dân tổ</div>
-            </div>
-
-            <!-- Giá tiền -->
-            <div fxFlex=40 fxLayoutAlign="end end" class="food-price">74.000đ</div>
-            </div>
-
-            <div fxLayout="column" class="food-item">
-
-            <!-- Số lượng và tên sản phẩm -->
-            <div fxFlex=60 fxLayout="row" fxLayoutAlign="start center">
-
-              <!-- Giá tiền -->
-              <div fxFlex=30 fxLayout="row" fxLayoutAlign="start center">
-                <mat-icon style="color:#329900; font-size: 20px; cursor: pointer;">add_circle</mat-icon>
-                <span style="font-weight: 500; margin-right: .3rem;">74</span>
-                <mat-icon style="font-size: 20px; cursor: pointer;">remove_circle</mat-icon>
-              </div>
-
-              <!-- Tên sản phẩm -->
-              <div fxFlex=70 class="food-title">Combo Mì dân tổ</div>
-            </div>
-
-            <!-- Giá tiền -->
-            <div fxFlex=40 fxLayoutAlign="end end" class="food-price">74.000đ</div>
-            </div>
-
-            <div fxLayout="column" class="food-item">
-
-            <!-- Số lượng và tên sản phẩm -->
-            <div fxFlex=60 fxLayout="row" fxLayoutAlign="start center">
-
-              <!-- Giá tiền -->
-              <div fxFlex=30 fxLayout="row" fxLayoutAlign="start center">
-                <mat-icon style="color:#329900; font-size: 20px; cursor: pointer;">add_circle</mat-icon>
-                <span style="font-weight: 500; margin-right: .3rem;">74</span>
-                <mat-icon style="font-size: 20px; cursor: pointer;">remove_circle</mat-icon>
-              </div>
-
-              <!-- Tên sản phẩm -->
-              <div fxFlex=70 class="food-title">Combo Mì dân tổ</div>
-            </div>
-
-            <!-- Giá tiền -->
-            <div fxFlex=40 fxLayoutAlign="end end" class="food-price">74.000đ</div>
+            <div fxFlex=40 fxLayoutAlign="end end" class="food-price">{{80000|currency:'VND': true}}</div>
             </div>
 
             <mat-divider></mat-divider>
               <!-- Tổng tiền -->
             <div fxLayout="row" fxLayoutAlign="center center" style="padding: 1rem;">
               <div fxFlex=30 style="font-weight: 500;">Tổng tiền:</div>
-              <div fxFlex fxLayoutAlign="end center" class="total">100.000đ</div>
+              <div fxFlex fxLayoutAlign="end center" class="total">{{100000|currency:'VND': true}}</div>
             </div>
 
               <!-- Nút đặt hàng -->
             <div fxLayout="row" fxLayoutAlign="center center">
-              <button mat-raised-button class="btn-order"> <mat-icon>done_all</mat-icon>Đặt trước</button>
+              <button mat-raised-button class="btn-order"> <mat-icon style="margin-right: .3rem;">done_all</mat-icon>Đặt trước</button>
             </div>
 
           </div>
@@ -195,8 +181,6 @@
 
      </div>
 
-     <!-- Khoảng trắng lề -->
-     <div fxFlex=15 fxHide.lt-lg></div>
 
   </div>
 

@@ -1,6 +1,5 @@
 .main-layout{
   width: 100%;
-  height: 100%;
 }
 
 .food-detail{
@@ -35,7 +34,8 @@
 }
 
 .food-title{
-  font-weight: 500;
+  color: gray ;
+  font-weight: 400;
   font-size: 1.3rem;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -57,11 +57,31 @@
 }
 
 .total{
-  font-weight: 600;
+  font-weight: 500;
   color:#0288D1;
-  font-size: 1.5rem;
+  font-style: italic;
 }
 
+.sale{
+  width: 100%;
+  background-color:#FBF9D8;
+  border-radius: 10px;
+  border : 1px solid #b1acac;
+}
+
+.sale-icon{
+  padding: .2rem;
+  border-radius: 5px;
+  background-color: #1492FD;
+  color: white;
+}
+
+.search{
+  ::ng-deep.mat-form-field-outline {
+    margin-top: 2%;
+  }
+  width: 90%;
+}
 
 
 
